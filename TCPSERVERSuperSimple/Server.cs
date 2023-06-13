@@ -64,7 +64,7 @@ namespace TCPSERVERSuperSimple
                 if (!string.IsNullOrEmpty(txtMessage.Text) && lstClientIp.SelectedItem != null)//check message and seelct client ip from listbox
                 {
                     server.Send(lstClientIp.SelectedItem.ToString(), txtMessage.Text);
-                    txtInfo.Text += $"Server:...{txtMessage.Text}{Environment.NewLine}";
+                    txtInfo.Text += $"Server:{Environment.NewLine}{txtMessage.Text}{Environment.NewLine}";
                     txtMessage.Text = string.Empty;
                 }
             }

@@ -66,7 +66,7 @@ namespace TCPClientSuperSimple
         private void btnSend_Click(object sender, EventArgs e)
         {
             SendData(txtOutMessage.Text);
-            txtInMessage.Text += $"->: {txtOutMessage.Text}{Environment.NewLine}";
+            txtInMessage.Text += $"->: {Environment.NewLine}{txtOutMessage.Text}{Environment.NewLine}";
             txtOutMessage.Text = string.Empty;
         }
         private void SendData(string data)
