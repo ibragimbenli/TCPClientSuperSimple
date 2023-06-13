@@ -51,7 +51,6 @@ namespace TCPClientSuperSimple
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            client = new SimpleTcpClient(txtIpAdres.Text + ":" + txtPort.Text);
             try
             {
                 client.Connect();
